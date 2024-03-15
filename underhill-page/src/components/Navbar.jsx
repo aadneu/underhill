@@ -4,10 +4,7 @@ import { Link } from 'react-scroll'
 const Navbar = () => {
   return (
     <div>
-       
-
-
-        <nav className="navbar navbar-expand">
+          <nav className="navbar navbar-expand bg-success fixed-top ">
             <div className="container-fluid ">
                 <a className="nav-link"><Link to="welcome" smooth={true} duration={100}>welcome</Link></a>
                 <div className="justify-content-end">

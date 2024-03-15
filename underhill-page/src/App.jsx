@@ -1,17 +1,21 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Navbar from './components/Navbar';
 import Content from './components/Content';
 import Footer from './components/Footer';
 
 
+
+
 function App() {
   
   return (
-    <>
-      <Navbar/>
-      <Content/>
-      <Footer/>
-    </>
+    <div >
+      <div><Navbar/></div>
+      <div className="content-wrapper"><Content/></div>
+      <div><Footer/></div>
+         
+    </div>
   )
 }
 
