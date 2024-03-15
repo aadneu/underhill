@@ -1,8 +1,11 @@
 import React from 'react'
 
+
 const Welcome = () => {
+
+
   return (
-    <div>
+    <div id="top-div" className ="welcome" >
       <h1>Welcome TOP</h1><br />
       <h1>Welcome</h1><br />
       <h1>Welcome</h1><br />

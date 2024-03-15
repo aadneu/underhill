@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import './components/styles.css'
+import './components/Content/Projects/Games.css'
 import Navbar from './components/Navbar';
 import Content from './components/Content';
 import Footer from './components/Footer';
@@ -10,11 +11,10 @@ import Footer from './components/Footer';
 function App() {
   
   return (
-    <div >
-      <div><Navbar/></div>
-      <div className="content-wrapper"><Content/></div>
-      <div><Footer/></div>
-         
+    <div className="app-background">
+      <Navbar/>
+      <Content/>
+      <Footer/>
     </div>
   )
 }

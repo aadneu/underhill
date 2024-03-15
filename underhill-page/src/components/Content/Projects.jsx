@@ -1,19 +1,17 @@
 import React from 'react'
+import Snake from './Projects/Snake'
+import Tictactoe from './Projects/Tictactoe'
 
 const Projects = () => {
   return (
-    <div>
-      <h1>PROJECTS TOP</h1><br />
-      <h1>PROJECTS</h1><br />
-      <h1>PROJECTS</h1><br />
-      <h1>PROJECTS</h1><br />
-      <h1>PROJECTS</h1><br />
-      <h1>PROJECTS</h1><br />
-      <h1>PROJECTS</h1><br />
-      <h1>PROJECTS</h1><br />
-      <h1>PROJECTS</h1><br />
-      <h1>PROJECTS</h1><br />
-      <h1>PROJECTS</h1><br />
+    <div className ="">
+      <div className='container'>
+            <div className="row d-flex">
+              <div className="col"><Snake/></div>
+              <div className="col"><Tictactoe/></div>
+            </div>
+      </div>
+    
 
     </div>
   )

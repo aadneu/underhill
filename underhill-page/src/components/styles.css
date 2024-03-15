@@ -1,0 +1,22 @@
+/* ALLE HAR MED NAVBAR OG TOPPEN OG GJØRE */
+.nav-link:hover{
+    cursor: pointer;
+    font-weight: bold; 
+}
+.navbar {
+    background-color: rgba(255, 255, 255, 0.6); 
+}
+#top-div {
+    padding-top: 60px; 
+   
+}
+
+/*BILDER*/
+
+.app-background {
+    background-image: url('./src/images/custombg.webp');
+    color: white;   
+    
+    
+}
+

@@ -4,14 +4,15 @@ import { Link } from 'react-scroll'
 const Navbar = () => {
   return (
     <div>
-          <nav className="navbar navbar-expand bg-success fixed-top ">
+          <nav className="navbar navbar-expand fixed-top ">
             <div className="container-fluid ">
-                <a className="nav-link"><Link to="welcome" smooth={true} duration={100}>welcome</Link></a>
+                <Link className="nav-link" to="welcome" offset={-60} smooth={true} duration={100}>en link til toppen</Link>
                 <div className="justify-content-end">
                 <div className="navbar-nav">
-                    <a className="nav-link"><Link to="about" smooth={true} duration={100}>about</Link></a>
-                    <a className="nav-link"><Link to="projects" smooth={true} duration={100}>projects</Link></a>
-                    <a className="nav-link"><Link to="contact" smooth={true} duration={100}>contact</Link></a>
+                    <Link className="nav-link" to="welcome" offset={-60} smooth={true} duration={100}>home</Link>
+                    <Link className="nav-link" to="about" offset={-55} smooth={true} duration={100}>about</Link>
+                    <Link className="nav-link" to="projects" offset={-55} smooth={true} duration={100}>projects</Link>
+                    <Link className="nav-link" to="contact" offset={-55} smooth={true} duration={100}>contact</Link>
                 </div>
                 </div>
             </div>

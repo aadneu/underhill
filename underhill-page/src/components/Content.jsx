@@ -8,7 +8,7 @@ import { Element } from 'react-scroll'
 const Content = () => {
 
   return (
-    <div>
+    <div className ="content-wrapper text-center">
         <Element name="welcome"><Welcome/></Element>
         <Element name="about"><About/></Element>
         <Element name="projects"><Projects/></Element>
