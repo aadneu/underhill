@@ -2,10 +2,13 @@
 .nav-link:hover{
     cursor: pointer;
     font-weight: bold; 
+ 
 }
 .navbar {
-    background-color: rgba(255, 255, 255, 0.6); 
+    background-image: url('./src/images/custombg.webp');
+    opacity: 0.8;
 }
+
 #top-div {
     padding-top: 60px; 
    
