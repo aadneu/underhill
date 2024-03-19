@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <div className ="">
       <div className='container'>
-            <div className="row d-flex">
+            <div className="row d-flex ">
               <div className="col"><Snake/></div>
               <div className="col"><Tictactoe/></div>
             </div>
