@@ -14,10 +14,10 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                   <div className="navbar-nav ">
                     
-                      <Link className="nav-link active" to="welcome" offset={-60} smooth={true} duration={100}>home</Link>
-                      <Link className="nav-link" to="about" offset={-55} smooth={true} duration={100}>about</Link>
-                      <Link className="nav-link" to="projects" offset={-55} smooth={true} duration={100}>projects</Link>
-                      <Link className="nav-link" to="contact" offset={-55} smooth={true} duration={100}>contact</Link>
+                      <Link className="nav-link" to="welcome" offset={-60} smooth={true} duration={1} spy={true}>hjem</Link>
+                      <Link className="nav-link" to="about" offset={-55} smooth={true} duration={1}  spy={true}>om</Link>
+                      <Link className="nav-link" to="contact" offset={-55} smooth={true} duration={1}  spy={true}>kontakt</Link>
+                      <Link className="nav-link" to="projects" offset={-55} smooth={true} duration={1}  spy={true}>prosjekt</Link>
                   </div>
                   </div>
                 </div>

@@ -5,23 +5,30 @@ const Welcome = () => {
 
 
   return (
-    <div id="top-div" className ="welcome" >
-      <div className="container">
-        <div className="row justify-content-center align-items-center" style={{ height: "100vh" }}>
-          <div className="col">
-            <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis repellendus voluptatum velit reprehenderit incidunt, 
-            doloremque omnis aperiam veritatis obcaecati inventore, animi modi ratione nesciunt? Non eos explicabo doloremque suscipit ut!</h1>
+    <div  className ="welcome " >
 
-          </div>
+     
 
-          <div className="col justify-content-end">
-            
-            <img src="./src/images/ådnesplass.png" style={{ height: "20vh" }} alt=""/>
-          </div>
-        </div>
-       
-          
+      <div className="container-lg d-flex justify-content-center">
         
+        <div className="col-10 d-grid min-vh-100">
+
+          <div className="row align-items-center">
+              <img src="./src/images/logo.png" className="img-fluid" alt=""/> 
+          </div>
+
+          <div className="row text-center">
+            <blockquote class="blockquote">
+              <p>Hva sa høna til musa? Ingenting! Høna kan ikke prate og musa kan ikke språket.</p>
+            </blockquote>
+          </div>
+          
+         
+
+        </div>
+        
+      
+       
       </div>
 
     </div>

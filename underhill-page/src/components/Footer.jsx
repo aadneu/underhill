@@ -2,7 +2,13 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div className="footer container-fluid py-1">
+        <div className="col text-center">
+          <h1>dette er footeren</h1>
+        </div>
+
+
+    </div>
   )
 }
 

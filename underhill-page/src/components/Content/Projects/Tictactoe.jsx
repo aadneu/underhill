@@ -24,9 +24,9 @@ const Tictactoe = () => {
   const translate = (farge) => {
     let winner = ''
     if (farge === 'red'){
-      winner = 'Rød vant!'
+      winner = 'Rød!'
     } else if (farge === 'blue'){
-      winner = 'Blå vant!'
+      winner = 'Blå!'
     }
     return winner
   }
@@ -83,7 +83,7 @@ const Tictactoe = () => {
     <div className='container lg text-center'>
 
       
-        <h1>3 på rad</h1>
+        <h1>Tre på rad</h1>
       
       <div className="row justify-content-center">
           <div className="col d-flex justify-content-center">
@@ -100,9 +100,10 @@ const Tictactoe = () => {
 
       </div>
         
-        <h1>{winner}</h1>
+        <h3>Vinner: {winner}</h3>
     </div>
   )
 }
 
 export default Tictactoe
+

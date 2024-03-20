@@ -10,8 +10,15 @@
 }
 
 #top-div {
-    padding-top: 60px; 
-   
+    padding-top: 60px;  
+}
+#bottom-div {
+    margin-bottom: 100px;  
+}
+.navbar .nav-link.active {
+    padding-bottom: 0%;
+    margin:0%;
+    border-bottom: whitesmoke solid 3px
 }
 
 /*BILDER*/
@@ -19,11 +26,27 @@
 .app-background {
     background-image: url('./src/images/custombg.webp');
     color: white;   
-    
-    
+}
+.card {
+    background-image: url('./src/images/prism.png');
+    color: whitesmoke;
+}
+.footer {
+    background-image: url('./src/images/prism.png');
+    color: whitesmoke;
+}
+.welcome-text {
+    font-family: 'Pathway Gothic One';
 }
 
-@media (max-width: 978px) {
+#scrollingBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 50%;
+    z-index: 9999; /* Ensure it's above other content */
+  }
+
+/* @media (max-width: 978px) {
     .container {
       padding:0;
       margin:0;
@@ -34,4 +57,4 @@
     }
 
  
-}
+} */

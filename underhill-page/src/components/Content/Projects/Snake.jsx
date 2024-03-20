@@ -168,10 +168,10 @@ const Snake = () => {
     const showButtons = () => {
         return (
             <div>
-                <button onClick={() => handleClick('up')} disabled={direction==='down'}>up</button> <br />
-                <button onClick={() => handleClick('left')} disabled={direction==='right'}>left</button>
-                <button onClick={() => handleClick('right')} disabled={direction==='left'}>right</button> <br />
-                <button onClick={() => handleClick('down')} disabled={direction==='up'}>down</button>
+                <button type="button" className="btn btn-light p-2" onClick={() => handleClick('up')} disabled={direction==='down'}>up</button> <br />
+                <button type="button" className="btn btn-light p-2" onClick={() => handleClick('left')} disabled={direction==='right'}>left</button>
+                <button type="button" className="btn btn-light p-2" onClick={() => handleClick('right')} disabled={direction==='left'}>right</button> <br />
+                <button type="button" className="btn btn-light p-2" onClick={() => handleClick('down')} disabled={direction==='up'}>down</button>
             </div>
         )
     }
@@ -193,15 +193,18 @@ const Snake = () => {
     const sortedScores = sessionScore.slice().sort((a, b) => b - a);
 
   return (
-    <div className='container-lg '>
+    <div className='container-lg'>
 
         <div className='row text-center justify-content-center'>
-                    <h1>Snake</h1>
+                    <h1>Ormin Lange</h1>
                     <div>
                         <button onClick={testFunction} className="btn bg btn-sm my-1">RESET</button> <br />
                     </div>
+            <div className="d-block d-lg-none">
+                    {showButtons()}
+
+            </div>
                     
-                    {/* {showButtons()} */}
             
             <div className='col-12 col-md-8 d-flex justify-content-center'>
           
@@ -223,15 +226,15 @@ const Snake = () => {
                 {/* </div> */}
             </div>
 
-            <h3>Apples eaten: {tummyContent.length}</h3>
-            Session score: 
+            <h3>Antall epler:: {tummyContent.length}</h3>
+            {/* Session score: 
             <div>
                 
                     {sortedScores.map((score, index) => (
                         <div key={index}>{score}</div>
                     ))}
                         
-            </div>               
+            </div>                */}
         </div>
     </div>
   )

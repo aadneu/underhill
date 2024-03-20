@@ -4,6 +4,9 @@ import './components/Content/Projects/Games.css'
 import Navbar from './components/Navbar';
 import Content from './components/Content';
 import Footer from './components/Footer';
+import {BrowserRouter} from 'react-router-dom'
+
+
 
 
 
@@ -11,11 +14,17 @@ import Footer from './components/Footer';
 function App() {
   
   return (
-    <div className="app-background">
-      <Navbar/>
-      <Content/>
-      <Footer/>
-    </div>
+    <BrowserRouter>
+    
+      <div className="app-background">
+        <Navbar/>
+
+      
+        
+        <Content/>
+        <Footer/>
+      </div>
+    </BrowserRouter>
 
   )
 }
