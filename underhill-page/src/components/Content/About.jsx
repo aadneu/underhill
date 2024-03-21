@@ -21,16 +21,17 @@ const About = () => {
                       nyte en god kopp sort gull, lage vafler, lytte til musikk, drikke øl og lage fredagspizza.
                   </div >
                   <div className="my-4 fs-5">
-                      Jeg liker fotball, styrketrening og kampsport. 
-                      Om vinteren liker jeg både langrenn og alpint. 
+                      Jeg liker formel 1, fotball, styrketrening og kampsport. 
+                      På vinteren liker jeg også både langrenn og alpint. 
                       I tillegg liker jeg Rocket League og Heroes of Newerth.
 
                       
                   </div >
                   <div className="my-4 fs-5">
                       Ferdighetene mine inkluderer foreløpig HTML, CSS, Bootstrap, 
-                      JavaScript og React, noe som gjør meg godt kjent med front-end 
-                      webutviklingsteknologier. I tillegg har jeg noe erfaring med Node.js, C#, PHP og MySQL, for å kunne håndtere backend og database.
+                      JavaScript og React, noe som gjør meg kjent med frontend 
+                      webutvikling. I tillegg har jeg noe erfaring med Node.js, C#, PHP og MySQL, 
+                      for å kunne håndtere backend og database.
                     
                   </div>
                   <div className="my-4 fs-5">

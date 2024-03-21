@@ -49,7 +49,7 @@
 }
 #aboutbgpic::before{
     content: "";
-    background-image: url('./src/images/speil2.png');
+    background-image: url('./src/images/speilred.png');
     position: absolute;
     background-repeat: no-repeat;
     background-size: contain;
