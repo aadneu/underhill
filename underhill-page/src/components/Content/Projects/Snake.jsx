@@ -226,7 +226,7 @@ const Snake = () => {
                 {/* </div> */}
             </div>
 
-            <h3>Antall epler:: {tummyContent.length}</h3>
+            <h3>Antall epler: {tummyContent.length}</h3>
             {/* Session score: 
             <div>
                 

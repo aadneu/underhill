@@ -5,6 +5,7 @@ import Tictactoe from './Projects/Tictactoe'
 
 
 import {Routes, Route, NavLink as ProjectLink} from 'react-router-dom'
+import Footer from '../Footer'
 
 
 const Projects = () => {
@@ -17,16 +18,18 @@ const Projects = () => {
     
     
 
-    <div className='container'>
+    <div className='projects container-fluid'>
+      <div className="container">
+
       <div className="col min-vh-100 ">
 
-        <div className="row mx-1 mb-5">
-          <nav className="navbar navbar-expand m">
-              <ProjectLink  to ="/"><button type="button" className="btn btn-sm btn-outline-warning" >Projects overview</button></ProjectLink>
+        <div className="row py-4 mb-5">
+          
+              <ProjectLink  to ="/"><button type="button" className="btn btn-sm btn-warning" >Prosjekter</button></ProjectLink>
               {/* <ProjectLink to="snake"><button type="button" class="btn btn-sm btn-outline-warning" >Snake</button></ProjectLink>
               <ProjectLink to="tictac"><button type="button" class="btn btn-sm btn-outline-warning">Tic tac toe</button></ProjectLink>
-              <button type="button" class="btn btn-sm btn-outline-warning" disabled>Spotify App</button> */}
-          </nav>
+            <button type="button" class="btn btn-sm btn-outline-warning" disabled>Spotify App</button> */}
+          
         </div>
      
         <div className="row">
@@ -39,8 +42,10 @@ const Projects = () => {
               </Routes>
           </div>
         </div>
-
+        
       </div> 
+      
+      </div>
       
     </div>
     

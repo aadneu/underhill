@@ -2,9 +2,9 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className="footer container-fluid py-1">
+    <div className="footer container-fluid py-1 mt-3">
         <div className="col text-center">
-          <h1>dette er footeren</h1>
+          <p>© 2024 Ådne Underhaug. Alle rettigheter reservert.</p>
         </div>
 
 
