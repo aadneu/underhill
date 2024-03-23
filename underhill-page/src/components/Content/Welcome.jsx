@@ -38,20 +38,21 @@ const Welcome = () => {
 
       <div className="container-lg d-flex justify-content-center">
         
-        <div className="col-10 d-grid min-vh-100">
+        <div className="col-10 d-grid min-vh-100 ">
 
-          <div className="row align-items-center zind">
+          <div className="row align-items-end zind">
               <img src="/logo.png" className="img-fluid" alt=""/> 
           </div>
 
-          <div className="row text-center zind">
+          <div className="row text-center zind align-items-end">
               {newQuote && (
             <figure className="text-center">
               <blockquote className="blockquote">
                 <p>{newQuote.quote}</p>
               </blockquote>
               <figcaption className="blockquote-footer text-warning">
-                {newQuote.source} <cite title="Source Title"> - {newQuote.philosophy} </cite>
+                {newQuote.source} 
+                {/* <cite title="Source Title"> - {newQuote.philosophy} </cite> */}
               </figcaption>
             </figure>
               )}
