@@ -48,9 +48,10 @@
 #aboutbgpic::before{
     content: "";
     background-image: url('/speilred.png');
+    background-position: bottom left;
     position: absolute;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 43vh;
     top: 0px;
     right: 0px;
     bottom: 0px;
@@ -77,15 +78,11 @@
     
 }
 
- /* @media (max-width: 992px) {
-    .about-bg {
-        background-image: url('src/images/speil1.png');
-        background-size: 50%;
-        background-position: bottom  right;
-        background-repeat: no-repeat;
-       
+@media (max-width: 576px) {
+    .balle {
+      font-size: 1rem;
     }
-}  */
+  }
 
 
 
@@ -94,10 +91,11 @@
 
 
 
-#scrollingBtn {
+
+/* #scrollingBtn {
     position: fixed;
     bottom: 20px;
     right: 50%;
-    z-index: 9999; /* Ensure it's above other content */
-  }
+    z-index: 9999; 
+  } */
 

@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react'
 
 const Welcome = () => {
 
-  // const [quotes, setQuotes] = useState([]);
+
   const [newQuote, setNewQuote] = useState(null)
   const URL = `https://philosophy-quotes-api.glitch.me/quotes`
 
@@ -12,7 +12,6 @@ const Welcome = () => {
       try{
         const result = await fetch(URL);
         const data = await result.json()
-        // setQuotes(data)
         let rand = Math.floor(Math.random() * data.length)
         let randomQuote = data[rand]
         setNewQuote(randomQuote)
@@ -24,11 +23,7 @@ const Welcome = () => {
     
   }, []);
   
-  // const getRandomQuote = (quotes) => {
-  //   let rand = Math.floor(Math.random() * quotes.length)
-  //   let randomQuote = quotes[rand]
-  //   setNewQuote(randomQuote)
-  // }
+
 
 
   return (
@@ -38,14 +33,14 @@ const Welcome = () => {
 
       <div className="container-lg d-flex justify-content-center">
         
-        <div className="col-10 d-grid min-vh-100 ">
+        <div className="col-10 d-grid min-vh-100">
 
-          <div className="row align-items-end zind">
+          <div className="row align-items-center mt-5 zind">
               <img src="/logo.png" className="img-fluid" alt=""/> 
           </div>
 
-          <div className="row text-center zind align-items-end">
-              {newQuote && (
+          <div className="row text-center mb-3 align-items-end zind">
+              {newQuote ? (
             <figure className="text-center">
               <blockquote className="blockquote">
                 <p>{newQuote.quote}</p>
@@ -55,7 +50,16 @@ const Welcome = () => {
                 {/* <cite title="Source Title"> - {newQuote.philosophy} </cite> */}
               </figcaption>
             </figure>
-              )}
+              ) : (
+                <figure className="text-center">
+                  <blockquote className="blockquote">
+                    <p>If it is not right, do not do it, if it is not true, do not say it.</p>
+                  </blockquote>
+                  <figcaption className="blockquote-footer text-warning">
+                  Marcus Aurelius 
+                  </figcaption>
+                </figure>
+                  )}
           </div>
           
          
