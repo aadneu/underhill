@@ -39,7 +39,7 @@ const Welcome = () => {
               <img src="/logo.png" className="img-fluid" alt=""/> 
           </div>
 
-          <div className="row text-center mb-3 align-items-end zind">
+          <div className="row text-center align-items-end zind">
               {newQuote ? (
             <figure className="text-center">
               <blockquote className="blockquote">
