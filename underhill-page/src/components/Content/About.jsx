@@ -30,12 +30,12 @@ const About = () => {
                   <div className="my-4 balle">
                       Ferdighetene mine inkluderer foreløpig HTML, CSS, Bootstrap, 
                       JavaScript og React, noe som gjør meg kjent med frontend 
-                      webutvikling. I tillegg har jeg noe erfaring med Node.js, C#, PHP og MySQL, 
+                      webutvikling. I tillegg har jeg noe erfaring med Node.js, C#, .NET, og Microsoft SQL, 
                       for å kunne håndtere backend og database.
                     
                   </div>
                   <div className="my-4 balle">
-                      Jeg jobber hele tiden for å bli litt bedre enn gårsdagen.
+                      Jeg jobber hele tiden for å bli litt bedre enn gårsdagen, og jeg er alltid åpen for å sette meg inn i og lære noe nytt.
                   </div>
 
             </div>
