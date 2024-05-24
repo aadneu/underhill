@@ -2,6 +2,7 @@ import React from 'react'
 import Overview from './Projects/Overview'
 import Snake from './Projects/Snake'
 import Tictactoe from './Projects/Tictactoe'
+import DecisionmakerApp from './Projects/Decisionmaker/DecisionmakerApp'
 
 
 import {Routes, Route, NavLink as ProjectLink} from 'react-router-dom'
@@ -39,6 +40,7 @@ const Projects = () => {
                   <Route index element={<Overview/>}/>
                   <Route path='snake' element={<Snake/>}/>
                   <Route path='tictac' element={<Tictactoe/>}/>
+                  <Route path='decision' element={<DecisionmakerApp/>}/>
               </Routes>
           </div>
         </div>
