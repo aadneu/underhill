@@ -6,30 +6,31 @@ const Welcome = () => {
 
   const [newQuote, setNewQuote] = useState(null)
   const URL = `https://philosophy-quotes-api.glitch.me/quotes`
-
+  
+  const fetchData = async () => {
+    try{
+      const result = await fetch(URL);
+      const data = await result.json()
+      let rand = Math.floor(Math.random() * data.length)
+      let randomQuote = data[rand]
+      setNewQuote(randomQuote)
+    } catch (error) {
+      console.error('error fetching data', error)
+    }
+  };
   useEffect(() => {
-    const fetchData = async () => {
-      try{
-        const result = await fetch(URL);
-        const data = await result.json()
-        let rand = Math.floor(Math.random() * data.length)
-        let randomQuote = data[rand]
-        setNewQuote(randomQuote)
-      } catch (error) {
-        console.error('error fetching data', error)
-      }
-    };
     fetchData();
     
   }, []);
   
 
-
+  const handleClick = () => {
+    fetchData();
+    console.log('clicked')
+  }
 
   return (
     <div  className ="welcome " >
-
-     
 
       <div className="container-lg d-flex justify-content-center">
         
@@ -39,11 +40,11 @@ const Welcome = () => {
               <img src="/logo.png" className="img-fluid" alt=""/> 
           </div>
 
-          <div className="row text-center align-items-end zind">
+          <div  className="row text-center align-items-end zind ">
               {newQuote ? (
-            <figure className="text-center">
+            <figure onClick={handleClick} className="text-center cursor">
               <blockquote className="blockquote">
-                <p>{newQuote.quote}</p>
+                <p> {newQuote.quote}</p>
               </blockquote>
               <figcaption className="blockquote-footer text-warning">
                 {newQuote.source} 

@@ -24,7 +24,7 @@ const Projects = () => {
 
       <div className="col min-vh-100 ">
 
-        <div className="row py-4 mb-5">
+        <div className="row pt-4 mb-3">
           
               <ProjectLink  to ="/"><button type="button" className="btn btn-sm btn-warning" >Prosjekter</button></ProjectLink>
 

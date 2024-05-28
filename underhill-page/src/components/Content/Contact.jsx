@@ -4,14 +4,9 @@ const Contact = () => {
   return (
     <div className="container">
         
-      <div className="row  align-items-center min-vh-100" >
+      <div className="row align-items-center" >
         
-
-        <div className="col text-center border">
-          <h1>CONTACT</h1>
-        </div>
-
-        <div className="col text-start border">
+        <div className="col-md-8 mx-auto">
           <h3>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis repellendus voluptatum velit reprehenderit incidunt, 
             doloremque omnis aperiam veritatis obcaecati inventore, animi modi ratione nesciunt? Non eos explicabo doloremque suscipit ut!

@@ -38,7 +38,7 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-   
+    transform: scaleX(-1);
     background-image: url('/speil1.png');
     background-size: 40vh;
     background-position: bottom right;
@@ -56,7 +56,7 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-
+    transform: scaleX(-1);
     background-image: url('/speilred.png');
     background-size: 43vh;
     background-position: bottom left;
@@ -81,6 +81,9 @@
 .card {
     background-image: url('/45degreee_fabric.webp');
     
+}
+.cursor {
+    cursor: pointer;
 }
 
 @media (max-width: 576px) {
