@@ -41,7 +41,7 @@ const Coinflip = ({justdo, setJustdo}) => {
     <div className='container'>
 
         {justdo && <div id="imgdiv">
-          <img  src={url} alt="" srcset="" style={{maxWidth: '100%'}}/>
+          <img  src={url} alt="" style={{maxWidth: '100%'}}/>
           <h2 onClick={handleClick} style={{ cursor:'pointer'}}>click here for optional advice</h2>
         </div>}
 

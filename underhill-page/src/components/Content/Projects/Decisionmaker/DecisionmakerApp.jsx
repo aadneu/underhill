@@ -29,7 +29,7 @@ const DecisionmakerApp = () => {
       <button onClick={resetState} className='btn btn-light btn-sm mb-4'>RESET</button>
 
       </div>
-      <div style={{borderRadius: '5px'}} className='container bg-light text-dark decision col-lg-5 col-md-6'>
+      <div style={{borderRadius: '5px'}} className='container bg-light text-dark decision col-lg-7 col-md-9'>
         <div style={{ textTransform: 'uppercase' }} className=' text-center justify-content-center p-3 '>
 
       {/* STARTPAGE */}
@@ -46,7 +46,7 @@ const DecisionmakerApp = () => {
        {/* IF NO */}
        { !needhelp && !yes && 
         <div id="imgdiv">
-          <img src="https://media.tenor.com/PkfLtiAdQN0AAAAe/why-are-you-here-adam.png" alt="" srcset="" style={{maxWidth: '100%'}}/>
+          <img src="https://media.tenor.com/PkfLtiAdQN0AAAAe/why-are-you-here-adam.png" alt=""  style={{maxWidth: '100%'}}/>
         </div>
        }
        {/* IF YES */}

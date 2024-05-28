@@ -50,7 +50,7 @@ const Aftercoinflip = () => {
             <>
                 <div>
                     <h1>speak</h1>
-                    <img style={{maxWidth: '50%'}} src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Shure_mikrofon_55S.jpg" alt="" srcset="" />
+                    <img style={{maxWidth: '50%'}} src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Shure_mikrofon_55S.jpg" alt=""  />
                     <h5>what decisions do you need help with?</h5>
                 </div>
                 <input 
@@ -76,7 +76,7 @@ const Aftercoinflip = () => {
                 <h1>
                    {chosen}
                 </h1>
-                    <img src="https://upload.wikimedia.org/wikipedia/en/e/e5/Duke_Nukem.png" alt="" srcset="" />
+                    <img src="https://upload.wikimedia.org/wikipedia/en/e/e5/Duke_Nukem.png" alt=""  />
                 <h2>and kick ass</h2>
                 <h4>also, chew bubble-gum</h4>
                 </div>

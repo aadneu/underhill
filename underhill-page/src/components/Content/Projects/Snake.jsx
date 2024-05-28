@@ -168,10 +168,10 @@ const Snake = () => {
     const showButtons = () => {
         return (
             <div>
-                <button type="button" className="btn btn-light p-2" onClick={() => handleClick('up')} disabled={direction==='down'}>up</button> <br />
-                <button type="button" className="btn btn-light p-2" onClick={() => handleClick('left')} disabled={direction==='right'}>left</button>
-                <button type="button" className="btn btn-light p-2" onClick={() => handleClick('right')} disabled={direction==='left'}>right</button> <br />
-                <button type="button" className="btn btn-light p-2" onClick={() => handleClick('down')} disabled={direction==='up'}>down</button>
+                <button type="button" className="btn btn-sm btn-light " onClick={() => handleClick('up')} disabled={direction==='down'}>up</button> <br />
+                <button type="button" className="btn btn-sm btn-light" onClick={() => handleClick('left')} disabled={direction==='right'}>left</button>
+                <button type="button" className="btn btn-sm btn-light " onClick={() => handleClick('right')} disabled={direction==='left'}>right</button> <br />
+                <button type="button" className="btn btn-sm btn-light" onClick={() => handleClick('down')} disabled={direction==='up'}>down</button>
             </div>
         )
     }
