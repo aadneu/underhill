@@ -26,7 +26,7 @@ const Overview = () => {
                     </div>
                     </div>
                 </div>
-                <div className="col-sm-6  my-3">
+                {/* <div className="col-sm-6  my-3">
                     <div className="card ">
                     <div className="card-body">
                         <h5 className="card-title">Spotify App</h5>
@@ -34,7 +34,7 @@ const Overview = () => {
                         <button type="button" className="btn btn-sm btn-warning" disabled>Spotify App</button>
                     </div>
                     </div>
-                </div>
+                </div> */}
                 <div className="col-sm-6  my-3">
                     <div className="card ">
                     <div className="card-body">

@@ -1,6 +1,7 @@
 import React from 'react'
 import {useState} from 'react'
 import Coinflip from './Coinflip'
+import './decision.css'
  
 const DecisionmakerApp = () => {
 
@@ -23,11 +24,15 @@ const DecisionmakerApp = () => {
   
   
     return (
-      <div style={{borderRadius: '5px'}} className='container bg-light text-dark '>
-        <div style={{ textTransform: 'uppercase' }} className='row text-center justify-content-center p-3 my-auto'>
+      <>
+      <div className='text-center'>
+      <button onClick={resetState} className='btn btn-light btn-sm mb-4'>RESET</button>
+
+      </div>
+      <div style={{borderRadius: '5px'}} className='container bg-light text-dark decision col-lg-5 col-md-6'>
+        <div style={{ textTransform: 'uppercase' }} className=' text-center justify-content-center p-3 '>
 
       {/* STARTPAGE */}
-      <button style={{width: '70px'}} onClick={resetState} className='btn btn-dark btn-sm ms-auto mb-3'>RESET</button>
        { needhelp &&
         <div>
           {/* <img src="https://i.imgur.com/iDjVEG4.jpeg" alt="" srcset="" /> */}
@@ -47,12 +52,14 @@ const DecisionmakerApp = () => {
        {/* IF YES */}
        { !needhelp && yes && 
         <Coinflip justdo={justdo} setJustdo={setJustdo}/>
-       }
+      }
         </div>
     
        
       
       </div>
+      </>
+
     )
   }
 

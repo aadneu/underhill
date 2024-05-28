@@ -27,6 +27,8 @@ const Projects = () => {
         <div className="row py-4 mb-5">
           
               <ProjectLink  to ="/"><button type="button" className="btn btn-sm btn-warning" >Prosjekter</button></ProjectLink>
+
+              
               {/* <ProjectLink to="snake"><button type="button" class="btn btn-sm btn-outline-warning" >Snake</button></ProjectLink>
               <ProjectLink to="tictac"><button type="button" class="btn btn-sm btn-outline-warning">Tic tac toe</button></ProjectLink>
             <button type="button" class="btn btn-sm btn-outline-warning" disabled>Spotify App</button> */}

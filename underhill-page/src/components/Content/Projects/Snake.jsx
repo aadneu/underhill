@@ -198,7 +198,8 @@ const Snake = () => {
         <div className='row text-center justify-content-center'>
                     <h1>Ormin Lange</h1>
                     <div>
-                        <button onClick={testFunction} className="btn bg btn-sm my-1">RESET</button> <br />
+                        
+                        <button onClick={testFunction} className="btn bg-light btn-sm my-1">RESET</button> <br />
                     </div>
             <div className="d-block d-lg-none">
                     {showButtons()}
