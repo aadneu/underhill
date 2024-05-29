@@ -4,19 +4,19 @@ const Contact = () => {
   return (
     <div className="container">
         
-      <div className="row align-items-center" >
+      <div className="row justify-content-center" >
         
-        <div className="col ">
-          <h3>
+        <div className="col-md-4">
+          <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis repellendus voluptatum velit reprehenderit incidunt, 
             doloremque omnis aperiam veritatis obcaecati inventore, animi modi ratione nesciunt? Non eos explicabo doloremque suscipit ut!
-          </h3>
+          </p>
         </div>
-        <div className="col-md-8">
-          <h3>
+        <div className="col-md-4">
+          <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis repellendus voluptatum velit reprehenderit incidunt, 
             doloremque omnis aperiam veritatis obcaecati inventore, animi modi ratione nesciunt? Non eos explicabo doloremque suscipit ut!
-          </h3>
+          </p>
         </div>
     
       </div>

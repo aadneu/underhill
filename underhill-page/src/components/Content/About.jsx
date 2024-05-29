@@ -38,7 +38,7 @@ const About = () => {
       <div id="aboutbgpic">
         <div className="container d-flex flex-column justify-content-center vh-100 ">
           <div className="row">
-            <div className="col-md-8 col-lg-6 mx-auto zind d-flex">
+            <div className="col-md-8 col-lg-7 mx-auto zind d-flex">
               <h2
                 onClick={viewWho}
                 className={`balle cursor ${showWho ? "fw-bold" : ""}`}
@@ -56,7 +56,7 @@ const About = () => {
           </div>
 
           <div className="row ">
-            <div className="col-md-8 col-lg-6 fs-5 zind mx-auto">
+            <div className="col-md-8 col-lg-7 fs-5 zind mx-auto">
               {showWho &&
                 (content ? (
                   content.hvem.text.map((item, index) => (
