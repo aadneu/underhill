@@ -43,14 +43,14 @@ const About = () => {
                 onClick={viewWho}
                 className={`balle cursor ${showWho ? "fw-bold" : ""}`}
               >
-                KORT OM MEG
+               {content ? content.hvem.title : 'Loading'}
               </h2>
               <h2 className="balle mx-3">|</h2>
               <h2
                 onClick={viewWhat}
                 className={`balle cursor ${showWhat ? "fw-bold" : ""}`}
               >
-                HVA GJØR JEG
+                {content ? content.hva.title : 'Loading'}
               </h2>
             </div>
           </div>
@@ -59,7 +59,7 @@ const About = () => {
             <div className="col-md-8 col-lg-6 fs-5 zind mx-auto">
               {showWho &&
                 (content ? (
-                  content.hvem.map((item, index) => (
+                  content.hvem.text.map((item, index) => (
                     <p key={index} className="my-4 balle">
                       {item}
                     </p>
@@ -71,12 +71,12 @@ const About = () => {
               {showWhat &&
                 (content ? (
                   <>
-                    {content.hva.map((item, index) => (
+                    {content.hva.text.map((item, index) => (
                       <p key={index} className="my-4 balle">
                         {item}
                       </p>
                     ))}
-                    <h4 className="balle">PÅGÅENDE PROSJEKT</h4>
+                    <h4 className="balle">{content.hvordan.title}</h4>
                     <p className="balle my-3">{content.hvordan.paragraph}</p>
                     <p className="balle">
                       <a href={content.hvordan.link} target="_blank">Link til prosjekt.</a>
@@ -86,22 +86,7 @@ const About = () => {
                   <h2>Loading...</h2>
                 ))}  
 
-              {/* {showWhat && (
-                <>
-                  {whatDo.map((item, index) => (
-                    <p key={index} className="my-4 balle">
-                      {item}
-                    </p>
-                  ))}
-                  
-                  <h4 className="balle">PÅGÅENDE PROSJEKT</h4>
-
-                  <p className="balle my-3">Liten tekst om pågående prosjekt</p>
-                  <p className="balle">
-                    <a href="">Link til prosjekt</a>
-                  </p>
-                </>
-              )} */}
+              
             </div>
           </div>
         </div>
