@@ -38,7 +38,7 @@ const About = () => {
       <div id="aboutbgpic">
         <div className="container d-flex flex-column justify-content-center vh-100 ">
           <div className="row">
-            <div className="col-md-8 col-lg-7 mx-auto zind d-flex">
+            <div className=" col-lg-8 mx-auto zind d-flex px-5">
               <h2
                 onClick={viewWho}
                 className={`balle cursor ${showWho ? "fw-bold" : ""}`}
@@ -56,11 +56,11 @@ const About = () => {
           </div>
 
           <div className="row ">
-            <div className="col-md-8 col-lg-7 fs-5 zind mx-auto">
+            <div className="col-lg-8 fs-5 zind mx-auto px-5">
               {showWho &&
                 (content ? (
                   content.hvem.text.map((item, index) => (
-                    <p key={index} className="my-4 balle">
+                    <p key={index} className="my-3 balle">
                       {item}
                     </p>
                   ))
@@ -72,14 +72,14 @@ const About = () => {
                 (content ? (
                   <>
                     {content.hva.text.map((item, index) => (
-                      <p key={index} className="my-4 balle">
+                      <p key={index} className="my-3 balle">
                         {item}
                       </p>
                     ))}
                     <h4 className="balle">{content.hvordan.title}</h4>
                     <p className="balle my-3">{content.hvordan.paragraph}</p>
                     <p className="balle">
-                      <a href={content.hvordan.link} target="_blank">Link til prosjekt.</a>
+                      <a href={content.hvordan.link} target="_blank">{content.hvordan.btn} </a>
                     </p>
                   </>
                 ) : (
