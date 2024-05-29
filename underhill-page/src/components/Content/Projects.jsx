@@ -17,17 +17,13 @@ const Projects = () => {
        
     <div className='projects container-fluid'>
       <div className="container">
+        <div className="col min-vh-100 ">
 
-      <div className="col min-vh-100 ">
-
-        <div className="row pt-4 mb-1">
-          
+          <div className="row pt-4 mb-1">
               <ProjectLink  to ="/"><button type="button" className="btn btn-sm btn-warning" >Prosjekter</button></ProjectLink>
-
-        </div>
-     
-        <div className="row">
-          <div>
+          </div>
+      
+          <div className="row">
               <Routes>
                   <Route index element={<Overview/>}/>
                   <Route path='snake' element={<Snake/>}/>
@@ -35,12 +31,9 @@ const Projects = () => {
                   <Route path='decision' element={<DecisionmakerApp/>}/>
               </Routes>
           </div>
-        </div>
-        
-      </div> 
       
+        </div> 
       </div>
-      
     </div>
     
 
