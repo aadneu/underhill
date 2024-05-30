@@ -45,14 +45,14 @@ const Contact = ({handleClick}) => {
 
   return (
     // <div className="contact min-vh-100 d-flex flex-column justify-content-center">
-      <div className="container contact ">
+      <div className="container ">
        
         <div className="row justify-content-center">
-          <div className="col">
+          <div className="col-md-5 ">
 
-            <form onSubmit={submit}>
+            <form className='' onSubmit={submit}>
                 {/* <label htmlFor="email">Email</label> */}
-                <input
+                <input className='form-control'
                   placeholder='Din mailadresse'
                   id="email"
                   type="email"
@@ -61,13 +61,13 @@ const Contact = ({handleClick}) => {
                   required
                   />
                 {/* <label htmlFor="message">Melding</label> */}
-                <textarea
+                <textarea className='form-control'
                   placeholder='Melding...'
                   id="message"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   />
-              <button type="submit">Send</button>
+              <button className=' form-control btn btn-light' type="submit">Send</button>
             </form>
             <p onClick={handleClick} className='text-center cursor'>Lukk kontaktskjema.</p>
           </div>

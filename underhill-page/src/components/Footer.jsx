@@ -14,7 +14,7 @@ const Footer = () => {
     <div className="footer contact py-1 mt-3">
 
           
-          {showContact ? <Contact handleClick={handleClick}/> : (<p onClick={handleClick} className='text-center cursor'>Har du en idé, eller vil du snakke med meg? Trykk her!</p>)}
+          {showContact ? <Contact handleClick={handleClick}/> : (<p onClick={handleClick} className='text-center cursor'>Har du en idé, eller vil du snakke med meg? <br/> Trykk her!</p>)}
             
 
           <div className='d-flex justify-content-center fs-5'>
