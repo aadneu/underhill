@@ -30,7 +30,7 @@ const Welcome = () => {
   }
 
   return (
-    <div  className ="welcome " >
+    <div id="welcome"  className ="welcome " >
 
       <div className="container-lg d-flex justify-content-center">
         

@@ -8,6 +8,10 @@ const Footer = () => {
 
   const handleClick = () => {
     setShowContact(prev => !prev)
+    setTimeout(() => {
+      document.body.scrollIntoView({ behavior: 'smooth', block: 'end' })
+
+    },50)
   }
 
   return (
@@ -24,7 +28,7 @@ const Footer = () => {
             <p className='mx-1'>|</p>
             <p><a href="https://www.linkedin.com/in/%C3%A5dne-underhaug-075652b0/" target="_blank">LinkedIn</a></p>
           </div>
-          <div className="text-center">
+          <div id="bottomdiv" className="text-center">
             
             <p>© 2024 Ådne Underhaug. <br className='linjeskift'/> Alle rettigheter reservert.</p>
           </div>
