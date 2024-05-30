@@ -14,7 +14,8 @@ const Footer = () => {
     <div className="footer contact py-1 mt-3">
 
           
-          {showContact ? <Contact handleClick={handleClick}/> : (<p onClick={handleClick} className='text-center cursor'>Har du en idé, eller vil du snakke med meg? <br/> Trykk her!</p>)}
+          {showContact ? <Contact handleClick={handleClick}/> : 
+          (<p onClick={handleClick} className='text-center cursor'>Har du en idé, eller vil du snakke med meg? <br className='linjeskift'/> Trykk her!</p>)}
             
 
           <div className='d-flex justify-content-center fs-5'>
@@ -24,8 +25,8 @@ const Footer = () => {
             <p><a href="https://www.linkedin.com/in/%C3%A5dne-underhaug-075652b0/" target="_blank">LinkedIn</a></p>
           </div>
           <div className="text-center">
-            <div>© 2024 Ådne Underhaug. </div>
-            <p>Alle rettigheter reservert.</p>
+            
+            <p>© 2024 Ådne Underhaug. <br className='linjeskift'/> Alle rettigheter reservert.</p>
           </div>
 
         

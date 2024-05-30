@@ -39,7 +39,7 @@ const Contact = ({handleClick}) => {
   }
 
   if (submitted) {
-    return <p className='text-center'>Jeg har mottatt meldingen din, takk for at du tok kontakt!</p>;
+    return <p className='text-center px-4'>Meldingen er sendt, jeg svarer så snart jeg kan!</p>;
   }
 
 
@@ -48,7 +48,7 @@ const Contact = ({handleClick}) => {
       <div className="container ">
        
         <div className="row justify-content-center">
-          <div className="col-md-5 ">
+          <div className="col-md-5 px-4">
 
             <form className='' onSubmit={submit}>
                 {/* <label htmlFor="email">Email</label> */}
@@ -60,6 +60,7 @@ const Contact = ({handleClick}) => {
                   onChange={(e) => setEmail(e.target.value)}
                   required
                   />
+                  <input style={{display: 'none'}}  />
                 {/* <label htmlFor="message">Melding</label> */}
                 <textarea className='form-control'
                   placeholder='Melding...'
