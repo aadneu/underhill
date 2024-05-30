@@ -1,11 +1,22 @@
 import React from 'react'
 import Contact from './Content/Contact'
+import { useState } from 'react'
 const Footer = () => {
-  return (
-    <div className="footer py-1 mt-3">
 
-          <Contact/>
+
+  const [showContact, setShowContact] = useState(false)
+
+  const handleClick = () => {
+    setShowContact(prev => !prev)
+  }
+
+  return (
+    <div className="footer contact py-1 mt-3">
+
           
+          {showContact ? <Contact handleClick={handleClick}/> : (<p onClick={handleClick} className='text-center cursor'>Har du en idé, eller vil du snakke med meg? Trykk her!</p>)}
+            
+
           <div className='d-flex justify-content-center fs-5'>
             
             <p><a href="https://github.com/aadneu" target="_blank">GitHub</a></p>
