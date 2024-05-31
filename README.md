@@ -10,9 +10,7 @@ Hvar har jeg lært?
   - Å kombinere bootstrap med custom CSS
   - Måttet ta hensyn til både desktop og mobilt view
   - Kjøpt eget domene, og vært innm hvordan man hoster/laster opp siden.
-  -
-  -
-  -
+
 
 
 - Ådne
