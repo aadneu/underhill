@@ -12,6 +12,5 @@ Hvar har jeg lært?
   - Kjøpt eget domene, og vært innm hvordan man hoster/laster opp siden.
 
 
-
-- Ådne
+Ådne
 
