@@ -4,6 +4,8 @@ Denne er hovedsaklig laget i læringsøyemed, men har også som hensikt å prese
 Jeg har brukt React (Javascript) og Bootstrap for sette den opp.
 Består foreløpig kun av frontend.
 
+Siden finner du på:
+www.underhill.no
 
 Hvar har jeg lært?
   - Mye grunnleggende React
