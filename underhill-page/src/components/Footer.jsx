@@ -27,6 +27,8 @@ const Footer = () => {
             <p><a href="https://github.com/aadneu" target="_blank">GitHub</a></p>
             <p className='mx-1'>|</p>
             <p><a href="https://www.linkedin.com/in/%C3%A5dne-underhaug-075652b0/" target="_blank">LinkedIn</a></p>
+            <p className='mx-1'>|</p>
+            <p><a href="#">Hjem</a></p>
           </div>
           <div id="bottomdiv" className="text-center">
             

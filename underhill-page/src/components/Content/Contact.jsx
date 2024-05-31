@@ -75,6 +75,7 @@ const Contact = ({toggleContactform}) => {
                   />
                 {/* <label htmlFor="message">Melding</label> */}
                 <textarea className='form-control'
+                  rows="3"
                   placeholder='Melding...'
                   id="message"
                   value={message}

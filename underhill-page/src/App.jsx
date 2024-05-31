@@ -20,7 +20,6 @@ function App() {
       <div className="app-background">
         <Navbar/>
         <Content/>
-        
         <Footer/>
       </div>
     </BrowserRouter>

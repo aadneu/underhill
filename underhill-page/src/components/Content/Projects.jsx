@@ -17,7 +17,7 @@ const Projects = () => {
        
     <div className='projects container-fluid'>
       <div className="container">
-        <div style={{minHeight: '86vh'}}className="col ">
+        <div style={{minHeight: '84vh'}}className="col ">
 
           <div className="row pt-4 mb-1">
               <ProjectLink  to ="/"><button type="button" className="btn btn-sm btn-warning" >Prosjekter</button></ProjectLink>
