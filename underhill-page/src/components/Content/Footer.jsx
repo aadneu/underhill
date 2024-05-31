@@ -1,10 +1,10 @@
 import React from 'react'
-import Contact from './Content/Contact'
+import Contact from './Contact'
 import { useState } from 'react'
-const Footer = () => {
+const Footer = ({setShowContact, showContact}) => {
 
 
-  const [showContact, setShowContact] = useState(false)
+ 
 
   const toggleContactform = () => {
     setShowContact(prev => !prev)
@@ -16,7 +16,7 @@ const Footer = () => {
 
   return (
     <div className="footer contact py-1 mt-3">
-
+        
           
           {showContact ? <Contact toggleContactform={toggleContactform}/> : 
           (<p onClick={toggleContactform} className='text-center cursor'>Har du en idé, eller vil du snakke med meg? <br className='linjeskift'/> Trykk her!</p>)}

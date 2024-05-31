@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 
-const About = ({toggleContactform}) => {
+const About = ({setShowContact}) => {
   const [showWho, setShowWho] = useState(true);
   const [showWhat, setShowWhat] = useState(false);
 
@@ -33,10 +33,18 @@ const About = ({toggleContactform}) => {
     setShowWhat(true);
   };
 
+  const shortCutContact = () => {
+    setShowContact(true)
+    setTimeout(() => {
+      document.body.scrollIntoView({ behavior: 'smooth', block: 'end' })
+    }, 50)
+  }
+
   return (
     <div className="about min-vh-100">
       <div id="aboutbgpic">
         <div className="container d-flex flex-column justify-content-center min-vh-100 ">
+          
           <div className="row">
             <div className=" col-lg-8 mx-auto zind d-flex px-5">
               <h2
@@ -54,23 +62,23 @@ const About = ({toggleContactform}) => {
               </h2>
             </div>
           </div>
-
+        
           <div className="row ">
             <div className="col-lg-8 fs-5 zind mx-auto px-5">
-              
+            
               {showWho &&
                 (content ? (
                   content.hvem.text.map((item, index) => (
                     <p key={index} className="my-3 balle">
                       {item}
+                      
                     </p>
-                    
                   ))
                   
                 ) : (
                   <h2>Loading...</h2>
                 ))}
-
+              
               {showWhat &&
                 (content ? (
                   <>
@@ -88,9 +96,10 @@ const About = ({toggleContactform}) => {
                 ) : (
                   <h2>Loading...</h2>
                 ))}  
-
+              <button className="btn p-0" onClick={shortCutContact}>Lurer du på noe?<br/>Kontakt meg her.</button>
               
             </div>
+           
           </div>
         </div>
       </div>

@@ -45,6 +45,7 @@ const Welcome = () => {
             <figure onClick={handleClick} className="text-center cursor">
               <blockquote className="blockquote">
                 <p> {newQuote.quote}</p>
+                
               </blockquote>
               <figcaption className="blockquote-footer text-warning">
                 {newQuote.source} 

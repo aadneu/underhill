@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 import Content from './components/Content';
 
 import {BrowserRouter} from 'react-router-dom'
-import Footer from './components/Footer';
+import Footer from './components/Content/Footer';
 
 
 
@@ -20,7 +20,7 @@ function App() {
       <div className="app-background">
         <Navbar/>
         <Content/>
-        <Footer/>
+        {/* <Footer/> */}
       </div>
     </BrowserRouter>
 
