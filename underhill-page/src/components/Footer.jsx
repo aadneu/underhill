@@ -6,7 +6,7 @@ const Footer = () => {
 
   const [showContact, setShowContact] = useState(false)
 
-  const handleClick = () => {
+  const toggleContactform = () => {
     setShowContact(prev => !prev)
     setTimeout(() => {
       document.body.scrollIntoView({ behavior: 'smooth', block: 'end' })
@@ -18,8 +18,8 @@ const Footer = () => {
     <div className="footer contact py-1 mt-3">
 
           
-          {showContact ? <Contact handleClick={handleClick}/> : 
-          (<p onClick={handleClick} className='text-center cursor'>Har du en idé, eller vil du snakke med meg? <br className='linjeskift'/> Trykk her!</p>)}
+          {showContact ? <Contact toggleContactform={toggleContactform}/> : 
+          (<p onClick={toggleContactform} className='text-center cursor'>Har du en idé, eller vil du snakke med meg? <br className='linjeskift'/> Trykk her!</p>)}
             
 
           <div className='d-flex justify-content-center fs-5'>

@@ -17,7 +17,7 @@ const Navbar = () => {
                       <Link className="nav-link" to="welcome" offset={-60} smooth={true} duration={1} spy={true}>hjem</Link>
                       <Link className="nav-link" to="about" offset={-55} smooth={true} duration={1}  spy={true}>om</Link>
                       <Link className="nav-link" to="projects" offset={-55} smooth={true} duration={1}  spy={true}>prosjekt</Link>
-                      <Link className="nav-link" to="contact" offset={-699} smooth={true} duration={1}  spy={true}>kontakt</Link>
+                      {/* <Link className="nav-link" to="contact" offset={-699} smooth={true} duration={1}  spy={true}>kontakt</Link> */}
                       {/* <Link className="nav-link" to="footer" offset={-55} smooth={true} duration={1}  spy={true}>kontakt</Link> */}
                   </div>
                   </div>

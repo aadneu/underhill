@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 
-const About = () => {
+const About = ({toggleContactform}) => {
   const [showWho, setShowWho] = useState(true);
   const [showWhat, setShowWhat] = useState(false);
 
@@ -36,7 +36,7 @@ const About = () => {
   return (
     <div className="about min-vh-100">
       <div id="aboutbgpic">
-        <div className="container d-flex flex-column justify-content-center vh-100 ">
+        <div className="container d-flex flex-column justify-content-center min-vh-100 ">
           <div className="row">
             <div className=" col-lg-8 mx-auto zind d-flex px-5">
               <h2
@@ -57,13 +57,16 @@ const About = () => {
 
           <div className="row ">
             <div className="col-lg-8 fs-5 zind mx-auto px-5">
+              
               {showWho &&
                 (content ? (
                   content.hvem.text.map((item, index) => (
                     <p key={index} className="my-3 balle">
                       {item}
                     </p>
+                    
                   ))
+                  
                 ) : (
                   <h2>Loading...</h2>
                 ))}

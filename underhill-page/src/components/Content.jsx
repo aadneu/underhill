@@ -16,10 +16,10 @@ const Content = () => {
   return (
     <div className ="content-wrapper ">
         <Element name="welcome" id="top-div"><Welcome/></Element> 
-        <Element name="about"><About/></Element>
+        <Element name="about"><About /></Element>
         <Element name="projects"><Projects/></Element>
         {/* <Element name="contact"><Contact/></Element> */}
-        <Element name="footer"><Footer/></Element>  
+        {/* <Element name="footer"><Footer /></Element>   */}
     </div>
   )
 }

@@ -21,7 +21,7 @@ const Overview = () => {
             text: 'Enkel app for deg som sliter med beslutningsvegring og FOBO.',
             btn: 'Decisionmaker',
             pjlink: 'decision'
-        }
+        },
     ]
 
 

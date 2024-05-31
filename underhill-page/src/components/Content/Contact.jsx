@@ -2,15 +2,17 @@ import React from 'react'
 
 import { useState } from 'react'
 
-const Contact = ({handleClick}) => {
+const Contact = ({toggleContactform}) => {
 
   const [message,setMessage] = useState('')
   const [email,setEmail] = useState('')
+  const [fake, setFake]= useState('')
 
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState("");
 
   function submit(e) {
+    if(fake != '') return
     // This will prevent page refresh
     e.preventDefault();
 
@@ -48,9 +50,20 @@ const Contact = ({handleClick}) => {
       <div className="container ">
        
         <div className="row justify-content-center">
-          <div className="col-md-5 px-4">
+          <div className="col-md-8 col-lg-6 px-4">
 
             <form className='' onSubmit={submit}>
+                <input style={{
+                  position: 'absolute',
+                  // top: '0',
+                  // tabIndex: "-1",
+                  left: '-999px'
+                  
+                  // display: 'none'
+                }} 
+                value={fake}
+                onChange={(e) => setFake(e.target.value)}
+                />
                 {/* <label htmlFor="email">Email</label> */}
                 <input className='form-control'
                   placeholder='Din mailadresse'
@@ -60,7 +73,6 @@ const Contact = ({handleClick}) => {
                   onChange={(e) => setEmail(e.target.value)}
                   required
                   />
-                  <input style={{display: 'none'}}  />
                 {/* <label htmlFor="message">Melding</label> */}
                 <textarea className='form-control'
                   placeholder='Melding...'
@@ -70,7 +82,7 @@ const Contact = ({handleClick}) => {
                   />
               <button className=' form-control btn btn-light' type="submit">Send</button>
             </form>
-            <p onClick={handleClick} className='text-center cursor'>Lukk kontaktskjema.</p>
+            <p onClick={toggleContactform} className='text-center cursor mt-3'>Lukk kontaktskjema.</p>
           </div>
         </div>
 
